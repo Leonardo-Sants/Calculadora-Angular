@@ -2,13 +2,18 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalculatorComponentComponent } from './calculator-component.component';
 
+import { CalculatorService} from '../service'
+
 describe('CalculatorComponentComponent', () => {
   let component: CalculatorComponentComponent;
   let fixture: ComponentFixture<CalculatorComponentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CalculatorComponentComponent ]
+      declarations: [ CalculatorComponentComponent ],
+      providers: [
+        CalculatorService
+      ]
     })
     .compileComponents();
   });
