@@ -16,7 +16,7 @@ export class CalculatorComponentComponent implements OnInit {
   constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit(): void {
-    this.Limpar();
+    this.limpar();
   }
   /**
    * Inicializa todos os operadores para os valores padrão.
@@ -24,7 +24,7 @@ export class CalculatorComponentComponent implements OnInit {
    * @return void
    */
 
-  Limpar(): void {
+  limpar(): void {
     this.numero1 = '0';
     this.numero2 = null;
     this.resultado = null;
